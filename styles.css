@@ -89,7 +89,16 @@ body {
         height: 200px; /* Kurangi tinggi header di layar kecil */
     }
     .header h1 {
-        font-size: 1.8em; /* Ukuran font lebih kecil di HP */
+        font-size: 5vw; /* Ukuran font menyesuaikan lebar layar */
+    max-width: 90%; /* Agar tidak terlalu melebar di layar besar */
+    text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 6vw; /* Sedikit lebih besar untuk keseimbangan */
     }
 }
 
